@@ -41,6 +41,11 @@
 
     <footer></footer>
 
+    <script>
+        document.getElementById("header-component").innerHTML = fetch("components/header.html").then(response => response.text());
+        document.getElementById("footer-component").innerHTML = fetch("components/footer.html").then(response => response.text());
+    </script>
+
     <script src="js/loadComponents.js"></script>
     <script src="js/script.js"></script>
 </body>
